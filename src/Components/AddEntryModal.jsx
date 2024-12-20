@@ -88,7 +88,7 @@ const AddEntryModal = ({ isOpen, closeModal, addEntry }) => {
               onClick={handleSubmit}
               className="px-4 py-2 bg-orange-500 text-white rounded-md"
             >
-              Add Entry
+              Add Entry Moda
             </button>
             <button
               type="button"

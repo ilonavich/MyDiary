@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import NoteCard from "./NoteCard";
-//suggestion Ilona
-import DiaryEntriesManager from "./DiaryEntriesManager";
 
 const MainPage = () => {
   const diaryEntries = [

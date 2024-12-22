@@ -35,14 +35,14 @@ function DiaryList({ entries, openEntryModal, deleteEntry }) {
   };
 
   return (
-    <div className="diary-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="diary-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {sortedEntries.length === 0 ? (
         <p className="text-center col-span-full">No diary entries yet.</p>
       ) : (
         sortedEntries.map((entry) => (
           <div
             key={entry.id}
-            className="entry bg-gray-100 p-4 mb-2  rounded  shadow-lg cursor-pointer"
+            className="entry bg-gray-100 p-4 mb-2  rounded  shadow-2xl cursor-pointer"
             onClick={() => openDiaryModal(entry)} // Open Diary Modal when card is clicked
           >
             <img
@@ -50,7 +50,7 @@ function DiaryList({ entries, openEntryModal, deleteEntry }) {
               alt="Preview"
               className="w-full h-40 object-cover mb-7 rounded"
             />
-            <h2 className="text-lg font-bold">{entry.title}</h2>
+            <h2 className="text-lg text-black font-bold">{entry.title}</h2>
             <p className="text-sm text-gray-600">{entry.date}</p>
 
             {/* Delete Button */}
@@ -59,7 +59,7 @@ function DiaryList({ entries, openEntryModal, deleteEntry }) {
                 e.stopPropagation(); // Prevent opening DiaryModal when delete button is clicked
                 openDeleteModal(entry); // Open delete confirmation modal
               }}
-              className="mt-2 bg-red-500 text-white px-4 py-2 rounded-full flex items-center justify-between"
+              className="mt-2 bg-orange-500 text-white px-4 py-2 rounded-full flex items-center justify-between"
             >
               <span>Delete</span>
               <TrashIcon className="h-5 w-5" />
@@ -84,7 +84,7 @@ function DiaryList({ entries, openEntryModal, deleteEntry }) {
               </button>
               <button
                 onClick={handleDelete} // Perform the delete action
-                className="mt-2 bg-red-500 text-white px-4 py-2 rounded-full flex items-center justify-between"
+                className="mt-2 bg-orange-500 text-white px-4 py-2 rounded-full flex items-center justify-between"
               >
                 <span>Delete</span>
                 <TrashIcon className="h-5 w-5" />

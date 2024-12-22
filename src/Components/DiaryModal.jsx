@@ -12,14 +12,14 @@ function DiaryModal({ entry, closeModal }) {
           <span>Close</span>
         </button>
 
-        <h2 className="text-xl font-bold mb-4">{entry.title}</h2>
-        <p className="text-sm text-gray-600">{entry.date}</p>
+        <h2 className="text-xl text-black font-bold mb-4">{entry.title}</h2>
+        <p className="text-sm  text-black ">{entry.date}</p>
         <img
           src={entry.image}
           alt="Entry Image"
           className="w-full h-48 object-cover mb-4 rounded"
         />
-        <p className="text-base">{entry.content}</p>
+        <p className="text-base  text-black">{entry.content}</p>
       </div>
     </div>
   );

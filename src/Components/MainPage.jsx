@@ -51,8 +51,13 @@ const MainPage = () => {
   return (
     <>
       <HeroSection openAddEntryModal={openAddEntryModal} />
-      <NoteCard z />
-      <div className="app-container">
+      {/* <div className="px-10 py-6 bg-white">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <NoteCard />s
+        </div>
+      </div> */}
+
+      <div className="app-container bg-gray-300">
         {/* Include Header component */}
 
         <div className="p-4 max-w-2xl mx-auto">

@@ -27,7 +27,6 @@ function AddEntryModal({ addEntry, closeModal }) {
   return (
     <div className="modal fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
       <div className="bg-black p-4 rounded shadow max-w-md w-full">
-        <h2 className="text-xl font-bold mb-4">Add New Entry</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
